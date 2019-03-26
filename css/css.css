@@ -2,65 +2,73 @@
 @font-face {
     font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal;
 }
+p {
+    color: white;
+}
 body.default {
     font-family: S-CoreDream-3Light;
     font-size: 50px;
 }
+
+
 /*자기소개 스타일*/
 div.myself {
     position: sticky;
     top: 0px;
-    border: 1px solid red;
     width: 100%;
     height: 100%;
     text-align: right;
+    font-size: 20px;
+    z-index: 100;
 }
-div.myself > img#mac2 {
-    display: inline-flex;
-    opacity: 0.7;
+div.myself > p.t_1 {
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+div.myself > a > img#mac {
+    width: 120px;
+    height: 150px;
 }
 /*박스*/
-div.box {
+div.box_1{
     width: 100%;
     position: relative;
-    height: 700px;
+    height: 750px;
+    background-color: rgb(241, 243, 244);
 }
-/*노래 1번 스타일*/
+div.box_2 {
+    width: 100%;
+    position: relative;
+    height: 750px;
+    background-color: black;
+}
+/*노래스타일*/
 div.music_1 {
-    margin: auto;
+    margin: 10px auto;
     position: absolute;
-    left:0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     width: 400px;
     height: 400px;
-
+    margin-left: 300px;
+}
+/*앨범소개*/
+div.row1 {
+    float: right;
+    margin-right: 350px;
+    color: black;
+    margin-top: 270px;
+    font-size: 24px;
+}
+div.row2 {
+    float: right;
+    margin-right: 390px;
+    color: black;
+    margin-top: 270px;
+    font-size: 24px;
 }
 /*lp이미지 스타일*/
-#lp {
-    transition: all ease 1s;
-    margin: auto;
-    height: 150px;
-    width: 150px;
-    text-align: center;
-}
-
-#lp:hover {
-    transform: rotate( 720deg );
-}
-/*노래 2번 스타일*/
-div.music_2 {
-    margin: auto;
-    position: absolute;
-    left:0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 400px;
+#lp2 {
     height: 400px;
+    width: 400px;
+    float: left;
+    margin-top: 50px;
 }
-#lp:hover {
-    transform: rotate( 720deg );
 
-}
